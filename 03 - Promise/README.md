@@ -65,6 +65,11 @@ Promise.resolve()
   .then(() => console.log("Promise 1"))
   .then(() => console.log("Promise 2"));
 console.log("ends");
+//"start"
+//"ends"
+//"Promise 1"
+//"Promise 2"
+//"setTimeout"
 ```
 
 Guess the output:

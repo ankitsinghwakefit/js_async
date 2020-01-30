@@ -1,7 +1,9 @@
 // Challenge 1
 
 function sayHello() {
-
+   setTimeout(function(){
+     console.log("Hello!");
+   },1000);
 }
 
 // Uncomment the line below when ready
@@ -9,9 +11,11 @@ function sayHello() {
 
 
 // Challenge 2
-var promise = new Promise(function (resolve, reject) {
-  // ADD CODE HERE
-});
+function prom(){
+  return new promise(function(resolve,reject){
+    setTimeout(resolve("resolved"),1000); 
+  }).then(res => console.log(res));
+}
 
 // Should print out "Resolved!"
 // ADD CODE HERE
@@ -19,9 +23,14 @@ var promise = new Promise(function (resolve, reject) {
 
 // Challenge 3
 
-promise = new Promise(function(resolve, reject) {
-  // ADD CODE HERE
+var pre = function(){
+  return new Promise(function(resolve, reject) {
+  reject("reject");
+}).catch(err=>{
+  console.log(err);
 })
+}
+pre();
 
 // Should print out "Reject!"
 // ADD CODE HERE
@@ -31,8 +40,11 @@ promise = new Promise(function(resolve, reject) {
 
 promise = new Promise(function (resolve, reject) {
   // ADD CODE HERE
+  resolve("Promise has been resolved!");
+}).catch(err => {
+  console.log(err);
 });
-
+//----------------------------------------------------------------
 // Uncomment the lines below when ready
 // promise.then(() => console.log('Promise has been resolved!));
 // console.log("I'm not the promise!");

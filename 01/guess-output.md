@@ -9,7 +9,8 @@ setTimeout(sayHello, 1000);
 
 console.log("Hey You!");
 ```
-
+Hey You!
+Hey You Called Me
  output
 
 2.
@@ -22,6 +23,8 @@ setTimeout(sayHello, 0);
 
 console.log("Hey You!");
 ```
+Hey You
+Hey You Called Me
  output
 
 3.
@@ -35,6 +38,9 @@ function main() {
 }
 main();
 ```
+A
+C
+B
  output
 
 4.
@@ -55,6 +61,9 @@ function main() {
   console.log("C");
 }
 
+A
+C
+B
  output
 
 5. Look at the output of the code below to understand hwo things are happening.

@@ -11,9 +11,14 @@ function testMe() {
 // After thinking it through, uncomment the following line to check your guess!
 // testMe(); // what order should these log out? Howdy or Partnah first?
 
+// "Partnah"
+// "Howdy"
+
 /* CHALLENGE 2 */
 
 function delayedGreet() {
+  
+ setTimeout(()=> console.log("welcome"),3000);
   // ADD CODE HERE
 }
 // Uncomment the following line to check your work!
@@ -23,6 +28,8 @@ function delayedGreet() {
 
 function helloGoodbye() {
   // ADD CODE HERE
+  console.log("hello riight away");
+  setTimeout(()=> console.log("bye"),2);
 }
 // Uncomment the following line to check your work!
 // helloGoodbye(); // should log: hello // should also log (after 3 seconds): good bye
@@ -31,6 +38,16 @@ function helloGoodbye() {
 
 function brokenRecord() {
   // ADD CODE HERE
+}
+
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+  console.log("hii again");
+}
+
+function myStopFunction() {
+  clearInterval(myVar);
 }
 // Uncomment the following line to check your work!
 // brokenRecord(); // should log (every second): hi again
