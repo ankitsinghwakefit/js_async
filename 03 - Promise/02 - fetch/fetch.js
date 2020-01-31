@@ -20,5 +20,5 @@ function fetchData(url, method) {
     Reject(xhr.onerror);
   })
 }
-// fetchData("https://api.github.com/users/nnnkit", "GET");
-fetchData("https://www.reddit.com/api/v1/me", "GET");
+fetchData("https://api.github.com/users/nnnkit", "GET");
+// fetchData("https://www.reddit.com/api/v1/me", "GET");
