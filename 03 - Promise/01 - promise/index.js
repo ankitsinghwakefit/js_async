@@ -38,14 +38,13 @@ pre();
 
 // Challenge 4
 
-promise = new Promise(function (resolve, reject) {
+var promise = new Promise(function (resolve, reject) {
   // ADD CODE HERE
   resolve("Promise has been resolved!");
 });
 promise.then(err => {
   console.log(err);
 })
-//----------------------------------------------------------------
 // Uncomment the lines below when ready
 // promise.then(() => console.log('Promise has been resolved!));
 // console.log("I'm not the promise!");
@@ -58,13 +57,13 @@ promise.then(err => {
 // Challenge 5
 function delay(){
  return new promise(function(resolve, reject){
-  resolve("resolved");
-   return setTimeout(resolve,1000)
+  resolve(setTimeout(sayHello() {
+    console.log("hello");
+  }),1000);
+   
  })
 }
-delay.then(res){
-  console.log(res);
-}
+
 
 
 
