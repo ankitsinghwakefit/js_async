@@ -36,33 +36,37 @@ function helloGoodbye() {
 
 /* CHALLENGE 4 */
 
+var myVar = setInterval(brokenRecord, 1000);
 function brokenRecord() {
   // ADD CODE HERE
+   console.log("hii again");
 }
 
-var myVar = setInterval(myTimer, 1000);
 
-function myTimer() {
-  console.log("hii again");
-}
-
-function myStopFunction() {
-  clearInterval(myVar);
-}
 // Uncomment the following line to check your work!
 // brokenRecord(); // should log (every second): hi again
 
 /* CHALLENGE 5 */
 
+
+var loop = 0;
 function limitedRepeat() {
-  // ADD CODE HERE
+  var myTime = setInterval(()=>{
+    loop++;
+    console.log("hii")
+    if(loop>4){
+      clearInterval(myTime);
+    }
+  }, 1000);
 }
+limitedRepeat();
+
 // Uncomment the following line to check your work!
 // limitedRepeat(); // should log (every second, for 5 seconds): hi for now
 
 /* CHALLENGE 6 */
 
-function everyXsecsForYsecs() {
+function everyXsecsForYsecs(func, interval, duration) {
   // ADD CODE HERE
 }
 // Uncomment the following lines to check your work!

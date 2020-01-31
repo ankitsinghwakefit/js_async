@@ -88,4 +88,9 @@ function main() {
 
 main();
 
+A 0
+C 3000
+B 3001
+
 ```
+
